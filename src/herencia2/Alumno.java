@@ -46,4 +46,9 @@ public class Alumno extends Persona {
 
 	}
 
+	@Override
+	public String toString() {
+		return super.toString() + " Es un Alumno";
+	}
+
 }

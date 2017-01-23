@@ -16,6 +16,11 @@ public abstract class Persona {
 		this.direccion = direccion;
 	}
 
+	@Override
+	public String toString() {
+		return this.nombre + " " + this.telefono + " " + this.direccion;
+	}
+
 	public static void main(String[] args) {
 
 	}
