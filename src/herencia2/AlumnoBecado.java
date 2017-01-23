@@ -5,7 +5,7 @@ public final class AlumnoBecado extends Alumno {
 	int importeBeca;
 
 	AlumnoBecado(Alumno a, int importeBeca) {
-		super(a.nombre, a.edad, a.direccion, a.telefono, a.curso, a.nia, a.telefonoTutor, a.relacionTutor);
+		super(a.nombre, a.edad,  a.telefono,a.direccion,a.curso, a.nia, a.telefonoTutor, a.relacionTutor);
 		this.importeBeca = importeBeca;
 	}
 
@@ -14,7 +14,7 @@ public final class AlumnoBecado extends Alumno {
 		System.out.println(p.devuelveDatos());
 		AlumnoBecado alumno = new AlumnoBecado((Alumno) p, 400);
 		// 800 línea de código
-		p.setTelefono("111111111");
+		p.setTelefono(null);
 		System.out.println(alumno.devuelveDatos());
 	}
 
