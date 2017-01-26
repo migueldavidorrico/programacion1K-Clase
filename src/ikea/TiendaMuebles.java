@@ -31,6 +31,13 @@ public class TiendaMuebles {
 		t.listaMuebles[7] = new Armario("Armario Dormitorio", 120, false);
 		t.listaMuebles[8] = new Armario("Armario Cocina", 78, true);
 
+		comparaPorPrecio comparador = new comparaPorPrecio();
+		t.ordenarCriterio(comparador);
+		System.out.println(t.devuelveCatalogo());
+
+		System.out.println(t.devuelveCatalogo());
+		t.ordenarCriterio(new comparaPorPrecio());
+
 		System.out.println(t.devuelveCatalogo());
 		t.ordenarCriterio(new MuebleComparable() {
 			@Override
