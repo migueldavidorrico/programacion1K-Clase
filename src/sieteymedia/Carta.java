@@ -14,6 +14,10 @@ public class Carta {
 		return this.numero + " de " + this.palo;
 	}
 
+	public double valor() {
+		return this.numero.getValor();
+	}
+
 	public static void main(String[] args) {
 		Carta c = new Carta(Numero.TRES, Palo.BASTOS);
 		System.out.println(c);
