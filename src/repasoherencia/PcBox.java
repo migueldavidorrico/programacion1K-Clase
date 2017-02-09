@@ -14,6 +14,7 @@ public class PcBox {
 		p.setFabricante("SPECTRUM");
 		Ordenador g = new PortatilGamer("LENOÇVO", "SIDECAR", CategoriasPrecios.A, 40);
 		// System.out.println(o);
+		PortatilGamer pg = (PortatilGamer) g;
 		System.out.println(p.esTransportable());
 		System.out.println(g.esTransportable());
 		ArrayList<ConsumoCalculable> electrodomesticos = new ArrayList<>();
